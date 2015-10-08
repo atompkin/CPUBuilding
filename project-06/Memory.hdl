@@ -41,4 +41,6 @@ CHIP Memory {
     Screen(in=in, load=screenload, address=address[0..12], out=screenout);
     Keyboard(out=keyboardout);
     Mux4Way16(a=ramout, b=ramout, c=screenout, d=keyboardout, sel=address[13..14], out=out);
+
+// if Address > 0x6001
 }
